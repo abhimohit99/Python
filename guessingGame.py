@@ -17,7 +17,7 @@ while True:
     diff1 = abs(rand-guess) #difference between the random number and the current guess
     
     if (guess == rand):
-        print("Corret! You win!")
+        print(f"Correct! It took you {len(guesses)-1} guesses!")
         break
     
     if (guesses[-2] == 0): #this block is for the case when there has only been 1 guess made, so no "previous" guess is there.
