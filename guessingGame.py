@@ -32,5 +32,7 @@ while True:
     elif(diff1 > diff): #if the guess is further away
         print("Colder...")
     
-    else: #if the same number is put in consecutively
+    elif(guesses[-2] == guess): #if the same number is put in consecutively
         print("The same number won't magically work this time...")
+    else: #if difference between diff1 and diff are same
+        print("Keep trying.")
