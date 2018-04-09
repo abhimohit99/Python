@@ -9,8 +9,8 @@ while True:
     guess = int(input("Guess: "))
     guesses.append(guess)
     
-    if(guess <= 0 or guess > 100):
-        print("Input a number between 1 and 100.")
+    if(guess <= 0 or guess > 1000):
+        print("Input a number between 1 and 1000.")
         continue
     
     diff = abs(rand-guesses[-2]) #difference between the random number and the previous guess
